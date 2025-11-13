@@ -5,16 +5,23 @@ body{
     background-color: #FFFFFF;
 }
 
-.container { 
-max-width: 1128px;
-margin: 0 auto;
+img{
+    display: block;
 }
 
+.container { 
+    max-width: 1158px;
+    margin: 0 auto;
+}
+
+.header{
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .header .container{
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 0 15px;
 }
 
 .logo{
@@ -25,8 +32,7 @@ margin: 0 auto;
     line-height: 117%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4D5AE5;
-
+    color: #4D5AE5; 
 }
 
 
@@ -37,7 +43,11 @@ margin: 0 auto;
 .nav{
     display: flex;
     justify-content: space-between;
-    gap: 76px;
+    align-items: center;
+}
+
+.nav .logo{
+    margin-right: 76px;
 }
 
 .nav-list{
@@ -47,6 +57,7 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .nav-item{
@@ -77,6 +88,7 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .contacts-item{
@@ -109,7 +121,8 @@ margin: 0 auto;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    margin: 0 0 48px;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .main-intro--button{
@@ -121,8 +134,12 @@ margin: 0 auto;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border-radius: 4px;
-    padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
 }
 
 .main-intro--button:hover{
@@ -158,6 +175,10 @@ margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 24px;
+}
+
+.values-item{
+    width: calc((100% - 72px) / 4);
 }
 
 .values-title{
@@ -203,7 +224,7 @@ margin: 0 auto;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: center;
-    margin: 32px 0 8px;
+    margin-bottom: 8px;
     color: #2e2f42;
 }
 
@@ -222,11 +243,17 @@ margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .employees-item{
     text-align: center;
     background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.employee-info{
+    padding: 32px 0;
 }
 
 .our-portfolio{
@@ -252,6 +279,7 @@ margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-name{
@@ -275,13 +303,18 @@ margin: 0 auto;
     padding: 100px 0;
 }
 
+.footer a{
+    display: inline-block;
+    margin: 0 0 16px;
+}
+
 .footer-descr{
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin: 16px 0 0;
+    margin: 0;
 }
 
 .logo-studio-footer{
